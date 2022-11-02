@@ -383,7 +383,7 @@ def print_template_network(
     if(optional_type == '1D_Conv'):
         tmpl = Template(filename=root + "/templates/network_template_1D.c")
     else:
-        tmpl = Template(filename=root + "/templates/network_template_dronet.c")
+        tmpl = Template(filename=root + "/templates/network_template_imav.c")
     tk['PULP_Nodes_Graph'] = PULP_Nodes_Graph
     s = tmpl.render(verbose_log=l,**tk)
     save_string = './application/DORY_network/src/network.c'
